@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}">
 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}">
+    <meta property="og:site_name" content="{{site.title}}">
+    <meta property="og:description" content="{% if page.description %} {{ page.description }} {% else %} {{ site.description }} {% endif %}">
+    <meta property="og:image" content="{% if page.og_image %} {{page.og_image}} {% else %} {{site.og_image}} {% endif %}">
+    <meta property="og:url" content="{% if page.url %} {{page.url}} {% else %} {{site.url}} {% endif %}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}">
+    <meta property="twitter:site" content="{{site.title}}">
+    <meta property="twitter:creator" content="{{site.copyright_name}}">
+    <meta property="twitter:description" content="{% if page.description %} {{ page.description }} {% else %} {{ site.description }} {% endif %}">
+    <meta property="twitter:image" content="{% if page.og_image %} {{page.og_image}} {% else %} {{site.og_image}} {% endif %}">
+    <meta property="twitter:image:width" content="1200">
+    <meta property="twitter:image:height" content="630">
+
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
