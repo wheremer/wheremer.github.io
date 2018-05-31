@@ -1,10 +1,10 @@
 # Site settings
-title: 
+title: meryl
 header-img: img/home-bg.png
 email: wheremer@gmail.com
 copyright_name: wheremer
 description: > # this means to ignore newlines until "baseurl:"
-  
+  meryl
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  wheremer
